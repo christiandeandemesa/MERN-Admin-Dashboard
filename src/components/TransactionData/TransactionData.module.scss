@@ -1,0 +1,16 @@
+.transaction {
+	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	&:nth-child(odd) {
+		background: #3d668a;
+	}
+
+	&:nth-child(even) {
+		background: #7b3d8a;
+	}
+}

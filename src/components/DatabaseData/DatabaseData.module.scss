@@ -1,0 +1,54 @@
+.smTopCon {
+	height: 80%;
+	flex: 1;
+	margin: 0 5%;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: darkslateblue;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+	.topTitle {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1rem;
+
+		.topPercent {
+			font-weight: 400;
+		}
+	}
+
+	.topAmount {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	.topLink {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1rem;
+
+		.topIcon {
+			padding: 2%;
+			border: 2px solid white;
+			border-radius: 50%;
+			font-size: 2.5rem;
+		}
+
+		.topLinkText {
+			border-bottom: 1px dashed white;
+			font-weight: 400;
+			cursor: pointer;
+		}
+	}
+}

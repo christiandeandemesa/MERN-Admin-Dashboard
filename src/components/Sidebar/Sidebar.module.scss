@@ -1,0 +1,48 @@
+.container {
+	flex: 1;
+	height: 90vh;
+	padding: 3% 1% 1% 1%;
+
+	.list {
+		width: 100%;
+		height: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.listItem {
+			width: 100%;
+			padding: 1%;
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 0.7s ease-out;
+
+			.icon {
+				color: darkslateblue;
+				font-size: 1.5rem;
+				transition: 0.7s ease-out;
+			}
+
+			.text {
+				color: black;
+				font-size: 1.5rem;
+				font-weight: 600;
+				transition: 0.7s ease-out;
+			}
+
+			&:hover {
+				background: darkslateblue;
+				transition: 0.3s ease-in;
+
+				.icon,
+				.text {
+					color: white;
+					transition: 0.3s ease-in;
+				}
+			}
+		}
+	}
+}
