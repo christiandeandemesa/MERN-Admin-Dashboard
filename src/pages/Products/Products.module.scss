@@ -1,0 +1,105 @@
+.layout {
+	display: flex;
+
+	.container {
+		flex: 7;
+		padding: 0 2%;
+		border-left: 1px solid lightgray;
+
+		.topCon {
+			width: 100%;
+			padding: 2% 0;
+			display: flex;
+			justify-content: space-between;
+
+			.title {
+				color: darkslateblue;
+				font-size: 1.5rem;
+			}
+
+			.createBtn {
+				padding: 0.7%;
+				background: green;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				font-size: 1rem;
+				cursor: pointer;
+
+				&:active {
+					transform: scale(0.98);
+				}
+			}
+		}
+
+		.table {
+			width: 100%;
+			padding: 1%;
+			border-collapse: collapse;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+			.tableRow {
+				.tableHeading {
+					padding: 1%;
+					border: 1px solid lightslategrey;
+					text-align: left;
+
+					&:nth-last-child(1) {
+						text-align: center;
+					}
+				}
+
+				.tableData {
+					padding: 1%;
+					border: 1px solid lightslategrey;
+
+					&:nth-last-child(2) {
+						// If width is not set, the image's size cannot be set
+						width: 10%;
+					}
+
+					.img {
+						width: 100%;
+						object-fit: contain;
+					}
+
+					.editBtn {
+						width: 35%;
+						margin-right: 10%;
+						padding: 3%;
+						background: darkslateblue;
+						color: white;
+						border: none;
+						border-radius: 10px;
+						font-size: 1rem;
+						cursor: pointer;
+
+						&:active {
+							transform: scale(0.98);
+						}
+					}
+
+					.deleteBtn {
+						width: 35%;
+						margin-left: 10%;
+						padding: 3%;
+						background: red;
+						color: white;
+						border: none;
+						border-radius: 10px;
+						font-size: 1rem;
+						cursor: pointer;
+
+						&:active {
+							transform: scale(0.98);
+						}
+					}
+				}
+
+				&:nth-child(odd) {
+					background: lightgray;
+				}
+			}
+		}
+	}
+}

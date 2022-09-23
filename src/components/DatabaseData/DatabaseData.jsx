@@ -1,5 +1,6 @@
 // Top boxes with a summary of the database data
 
+import {Link} from 'react-router-dom';
 import {HiOutlineArrowRight, HiOutlineClipboardList} from 'react-icons/hi';
 import {TbUsers} from 'react-icons/tb';
 import {MdStorefront} from 'react-icons/md';
@@ -8,6 +9,8 @@ import PropTypes from 'prop-types';
 import styles from './DatabaseData.module.scss';
 
 function DatabaseData({title, percent, amount, newAmount, text}) {
+	const linkPath = text.split(' ')[2];
+
 	return (
 		<div className={styles.smTopCon}>
 			<div className={styles.topTitle}>
@@ -24,7 +27,10 @@ function DatabaseData({title, percent, amount, newAmount, text}) {
 				{title === 'USERS' && <TbUsers className={styles.topIcon} />}
 				{title === 'PRODUCTS' && <MdStorefront className={styles.topIcon} />}
 				{title === 'ORDERS' && <HiOutlineClipboardList className={styles.topIcon} />}
-				<h3 className={styles.topLinkText}>{text}</h3>
+				{/* Renders a different route path depending on the text */}
+				<Link to={`/${linkPath}`} style={{textDecoration: 'none'}}>
+					<h3 className={styles.topLinkText}>{text}</h3>
+				</Link>
 			</div>
 		</div>
 	);

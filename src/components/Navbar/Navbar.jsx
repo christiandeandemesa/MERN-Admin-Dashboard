@@ -12,7 +12,7 @@ function Navbar() {
 
 	return (
 		<>
-			<div className={styles.container}>
+			<nav className={styles.container}>
 				<h1 className={styles.logo}>DYSLECIX ADMIN</h1>
 				<div className={styles.links}>
 					{/* todo Light/Dark mode with useContext */}
@@ -23,7 +23,7 @@ function Navbar() {
 					)}
 					<h2 className={styles.avatar}>CD</h2>
 				</div>
-			</div>
+			</nav>
 			{/* Outlet renders other components (look at App.js) */}
 			<Outlet />
 		</>
